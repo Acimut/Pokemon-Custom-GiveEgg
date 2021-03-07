@@ -50,3 +50,14 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+#Otros archivos
+*.sgm
+*.sav
+*.gba
+build
+*.zip
+*.bak
+*.txt
+*.o
+*gif
