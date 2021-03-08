@@ -39,7 +39,7 @@ void CustomGiveEgg()
     u8 level = gSpecialVar_0x8001;
     if (!level) //si dejas el nivel en 0, automáticamente pasa a ser 5
         level = 5;
-    if (species > NUM_ESPECIES) //si la especie es mayor a la cantidad predefinida, escoje una especie random
+    if (species > (NUM_ESPECIES + ESPACIOS_VACIOS)) //si la especie es mayor a la cantidad predefinida, escoje una especie random
         species = 0;
     while(!species)
     {
@@ -51,7 +51,7 @@ void CustomGiveEgg()
             species = 0;
         }
     }
-    CreateMon(mon, species, gSpecialVar_0x8001, gSpecialVar_0x8004, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(mon, species, level, gSpecialVar_0x8004, FALSE, 0, OT_ID_PLAYER_ID, 0);
     metLevel = 0;
 
     if(gSpecialVar_0x8002 > 0 && gSpecialVar_0x8002 < 13)
