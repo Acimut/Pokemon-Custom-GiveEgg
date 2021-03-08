@@ -26,7 +26,7 @@ Requisitos:
 
 -8-. Abrimos el archivo offsets.txt que se generó luego de ejecutar make, en el paso 5. De ahí tomaremos 2 offset.
 
--9-. [Hook] El primer offset será el de hookaddhatchedmontoparty, copiamos lo que va después del 08, en mi caso 0xFC0404, nos dirigimos a ese offset en el editor hexadecimal, copiamos 0xC0 bytes y lo pegamos en el offset 0x46d60
+-9-. [Hook] El primer offset será el de hookaddhatchedmontoparty, copiamos lo que va después del 08, en mi caso 0xFC0418, nos dirigimos a ese offset en el editor hexadecimal, copiamos 0xC0 bytes y lo pegamos en el offset 0x46d60
 
 10-. El segundo offset será el de la función "customgiveegg" que en mi caso es 08FC0000, copiamos lo que va después del 08, esto en los scripts será llamado como "callasm 0xFC0001".
 
